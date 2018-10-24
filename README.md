@@ -18,4 +18,4 @@ puts sum
 
 current_president = "Barack O"
 puts "In 2016, the president was # {current_president}."
-# Practicename
+# Practicename created
