@@ -1,4 +1,4 @@
-Hi! 👋
+Hi
 
 You've opened the IDE Sandbox. 🎉
 
@@ -19,3 +19,118 @@ puts sum
 current_president = "Barack O"
 puts "In 2016, the president was # {current_president}."
 # Practicename created
+
+
+def self.all 
+  @@all
+end 
+ 
+ 
+ Person.new("Grace Hopper")
+ 
+grace_hopper == Person.all.find { |person| person.name == "Grace Hopper"}
+
+def self.find_by_name(name)
+  @all.find{ |p| p.name == "Grace Hopper"}
+ 
+ end
+ 
+ grace_hopper = Person.find_by_name("Grace Hopper")
+ 
+ 
+
+
+def self.new_from_csv(csv_data)
+rows = csv_data.split("\n")
+people = rows.collect do |row|
+data = row.split(",")
+name = data[0]
+age = data[1]
+company = data[2]
+
+person = self.new
+
+person = Person.new
+person.name = name
+person.age = age
+person.company = company
+person
+
+people = Person.new_from_csv(csv_data)
+
+people >> Person.new_from_csv()
+people.flatten
+people
+end
+
+people
+
+
+class Dog 
+
+  attr_accessor :dog, :name
+  
+  
+  def initialize(name)
+    @name = name
+  end
+  
+end
+  
+  
+  
+def dog_name=(dog_name)
+  @dog_name = dog_name
+end
+
+def dog_name
+  @dog_name
+end
+
+
+class Album
+
+@@album_count = 0
+
+def initialize
+  @@album_count += 1
+end
+
+def self.album_counter
+  @@album_count
+  end
+end
+
+
+Album.new 
+Album.new
+Album.new 
+Album.new
+
+Album.album_counter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
